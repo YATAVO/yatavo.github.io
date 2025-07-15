@@ -11,7 +11,7 @@ p {
     text-align: center;
     margin-left: 100px;
     margin-right: 100px;
-   
+    background-color: rgb(21, 21, 20);
 }
 
 
@@ -21,6 +21,7 @@ p {
     text-align: center;
     margin-left: 00px;
     margin-right: 00px;
+    background-color: rgb(21, 21, 20);
 }
 
 
@@ -30,6 +31,7 @@ p {
     text-align: center;
     margin-left: 00px;
     margin-right: 00px;
+    background-color: rgb(21, 21, 20);
 }
 
 .title {
@@ -37,10 +39,12 @@ p {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 25px;
+    background-color: rgb(21, 21, 20);
 }
 
 ul {
     list-style-type: none;
+    background-color: rgb(21, 21, 20);
 }
 
 li{
@@ -49,6 +53,7 @@ li{
     text-align: center;
     margin-left: 00px;
     margin-right: 00px; 
+    background-color: rgb(21, 21, 20);
 }
 
 
@@ -57,14 +62,17 @@ img {
     margin-left: 10px;
     margin-left: 10px;
     border-radius: 25px;
+    background-color: rgb(21, 21, 20);
 }
 
 .plate {
     width: 500px;
+    background-color: rgb(21, 21, 20);
 }
 
 .tovar {
     width: 500px;
+    background-color: rgb(21, 21, 20);
 }
 
 
@@ -85,6 +93,7 @@ button {
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 button:hover {
@@ -95,9 +104,11 @@ button:hover {
 video {
     width: 700px;
     border-radius: 25px;
+    background-color: rgb(21, 21, 20);
 }
 
 
 a {
     color: rgb(151, 151, 151);
+    background-color: rgb(21, 21, 20);
 }
