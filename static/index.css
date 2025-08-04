@@ -5,6 +5,13 @@ body {
     align-items: center;
 }
 
+/* Стили для больших экранов */
+body {
+  font-size: 18px;
+}
+
+
+
 p {
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -147,3 +154,113 @@ a {
     color: rgb(151, 151, 151);
 }
 
+
+
+@media (max-width: 600px) {
+
+    /* Основной контейнер */
+.container {
+    display: flex;
+    flex-direction: column; /* Расположение элементов сверху вниз */
+    align-items: center; /* Горизонтальное центрирование элементов */
+    gap: 10px; /* Интервал между элементами */
+}
+
+/* Блок одного товара */
+.item {
+    display: flex;
+    flex-direction: column; /* Элементы внутри блока расположены вертикально */
+    align-items: center; /* Центрирование элементов */
+    background-color: rgb(24, 26, 27); /* Цвет фона */
+    padding: 10px; /* Отступы вокруг содержимого */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 5px; /* Скругленные углы */
+    width: 100%; /* Ширина элемента занимает всю доступную ширину контейнера */
+}
+
+/* Фотография товара */
+.tovar {
+    max-width: 80%; /* Изображение растягивается на всю ширину родительского блока */
+    height: auto;
+    object-fit: cover; /* Масштабирует изображение, сохраняя пропорции */
+    margin-bottom: 10px; /* Промежуток перед описанием */
+}
+
+/* Описание товара и ссылка */
+.item p {
+    font-size: 16px; /* Размер шрифта уменьшен для лучшего восприятия на маленьком экране */
+    line-height: 1.5; /* Интерлиньяж */
+    text-align: center; /* Центровка текста */
+    margin: 0; /* Обнуляем внутренние отступы */
+}
+
+.item p a {
+    color: blue;
+    text-decoration: none;
+}
+
+.item p a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 300px;
+    margin-left: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+   
+}
+
+
+.Hi  {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 00px;
+    margin-right: 00px;
+}
+
+
+.title_2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 00px;
+    margin-right: 00px;
+}
+
+.title {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+   color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 00px;
+    margin-right: 00px; 
+    background-color: rgb(24, 26, 27);
+}
+
+video {
+    width: 400px;
+    border-radius: 25px;
+}
+
+
+}
