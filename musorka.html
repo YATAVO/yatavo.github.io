@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./static/index.css">
+        <title>Умная мусорка</title>
+    </head>
+
+<body>
+ 
+    <p class="Hi"> Описание:  </p>
+
+    <div>
+        <img class="tovar" src="./musorka/Ощий вид.jpg" alt="Выключенное состояние" >
+    </div>
+
+    <p>Мусорка с авто открытием крышки когда обьект находтся в 10 см или меньше от неё и отображение температуры и влажности в комнате</p>
+    
+    <p>Демонстрация работы </p>
+    <video width="640" height="360" controls>
+        
+        <source src="./musorka/видео.mp4" type="video/mp4">
+        
+        Ваш браузер не поддерживает элемент video.
+    </video>
+
+
+
+
+
+
+    <p class="Hi"> Инструкция по сборке:  </p>
+
+    <p class="title_2">Детали нужные вам для сборки: </p>
+
+    <ul>
+        <li>Плата ардуино нано</li>
+        <li>1 макетки на 400 точек</li>
+        <li>Макетные провода папа-папа</li>
+        <li>макетные провода папа-мама</li>
+        <li>OLED дисплей</li>
+        <li>Сонар</li>
+        <li>Датчик влажности и температуры DHT11</li>
+        <li>Серво привод</li>
+    </ul>
+
+    <p class="title_2">Примерная стоимость всех деталей: 1 877 рублей </p>
+    <p class="title_2">Всё ссылки можно найти <a href="./Details.html">тут</a></p>
+
+    <p class="title_2">Приступим к сборке: </p>
+
+    <p>Все провода подписанны по номеру порта на ардуино, если вы начинающий в этой теме перейдите на <a href="./arduino_baze.html">гайд по базе для моих проектов</a>.</p>
+    <p>На схемк все показано стерлочками и подписанно текстом, всё чёрные провода подлючаются в GND(Заземление), а все красные в плюс(+5v)</p>
+
+    <p>Схема в полной сборке будет выглядить как-то так: </p>
+    <img src="./musorka/схема.png" alt="полная схема">
+
+    <p class="title_2">Как выглядит электроника в корпусе: </p>
+    <div>
+        <img src="./musorka/электроника 1.jpg" alt="" class="tovar">
+        <img src="./musorka/электроника 2.jpg" alt="" class="tovar">
+    </div>
+
+    <p class="title_2">Размеры корпуса: </p>
+    <p>Дно и криша 10х10см, высота вмесете с крышкой 18см. Можно сделать и свои размеры</p>
+    
+
+
+    <p class="title_2">Код: </p>
+
+
+   <P>Вот и закончилась наша сборка, приступим к коду, если вы незнаете как загрузить код на плату ардуино, то смотрите <a href="./arduino_baze.html">гайд по базе для моих проектов</a>.</P>
+   <p>Нужные библиотеки: GyverOled, servo, DHT, </p>
+
+   <div>
+    <a href="./musorka/GyverOLED.zip" download target="_blank"><button>Скачать GyverOled</button></a>
+    <a href="./musorka/DHT_sensor_library.zip" download target="_blank"><button>Скачать DHT</button></a>
+   </div>
+
+
+   <a href="./musorka/musorka.ino" download target="_blank"><button>Скачать код</button></a>
+   
+
+
+ 
+
+
+
+    <p class="Hi"> Если вы всё паравильно собрали то у вас всё должно заработать а если нет... можете писать в сообщения телеграм канала или в дс сервер по кнопкам ниже: </p>
+
+    <div>
+        <a href="https://t.me/YATAVO_OFFICIAL" target="_blank"><button>Телеграм канал</button></a>
+        <a href="https://discord.gg/yCGD6DYKgg" target="_blank"><button>Дискорд сервер</button></a>
+
+    </div>
+
+
+    <div>
+        <a href="./index.html"><button>На главную страницу</button></a>
+        <a href="./arduino.html"><button>На страничку Arduino</button></a>
+    </div>
+    
+
+
+
+</body>
+</html>
