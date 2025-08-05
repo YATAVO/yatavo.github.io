@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./static/index.css">
+        <title>Гайд по PN532</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+<body>
+
+    <p class="Hi"> Неболшой гайдик по pn532(Модуль RFID) </p>
+
+    <p class="Hi"> Как его завести на ардуино </p>
+    <p>Для тестировки соберём простейшую схему на ардуино нано</p>
+    <img src="./pn532/схема2.png" alt="">
+
+    <div>
+    <a href="./pn532/chitalka_rfid.ino" download target="_blank"><button>Скачать код</button></a>
+    </div>
+
+    <p>Эта схема работает так: Прикладываем карточку или метку к модулю pn532 и он считывает её после чего выводит в serial monitor информацию о карте\метке</p>
+    <p>Для более удобной отладки можно добавить OLED экран делается это вот так: </p>
+    <img src="./pn532/схема.png" alt="">
+
+    <div>
+    <a href="./pn532/chitalka_rfid_oled.ino" download target="_blank"><button>Скачать код</button></a>
+    </div>
+
+     <p>Тут уже всё выводится на дисплей и находится на нём на протяжении 1 секунды</p>
+
+     <p>Можно сделать например когда вы прикладываете верную карту на oled дисплей выводится надпись OK, соберём схему:  </p>
+
+     <img src="./pn532/схема.png" alt="">
+
+    <div>
+    <a href="./pn532/vernoay_card.ino" download target="_blank"><button>Скачать код</button></a>
+    </div>
+
+    <p>Ещё к этой схеме можно добавить 2 светодиода которые тоже будут говорить о том верная карта или нет схема: </p>
+    <img src="./pn532/схема3.png" alt="">
+    <p>резисторы у меня тсоят на 2.2 кОМ</p> 
+    <div>
+    <a href="./pn532/vernoay_card.ino" download target="_blank"><button>Скачать код</button></a>
+    </div>
+
+    <p>На этом всё! надеюсь я вам помог.</p>
+
+
+    <p class="Hi"> Удачных проектов! Если остались вопросы пишите в сообщения телеграм канала или в дс сервер по кнопкам ниже: </p>
+
+    <div>
+        <a href="https://t.me/YATAVO_OFFICIAL" target="_blank"><button>Телеграм канал</button></a>
+        <a href="https://discord.gg/yCGD6DYKgg" target="_blank"><button>Дискорд сервер</button></a>
+
+    </div>
+
+
+    <div>
+        <a href="./index.html"><button>На главную страницу</button></a>
+        <a href="./arduino.html"><button>На страничку Arduino</button></a>
+    </div>
+
+
+
+
+
+</body>
+</html>
