@@ -75,6 +75,48 @@ img {
 
 
 
+/* Основной контейнер */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Интервал между элементами */
+}
+
+/* Блок одного товара */
+.item {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы вертикально */
+    align-items: center; /* Центрирование элементов */
+   background-color: rgb(24, 26, 27); /* Цвет фона */
+    padding: 10px; /* Подушка вокруг содержимого */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    border-radius: 5px; /* Скругление углов */
+}
+
+/* Фотография товара */
+.tovar {
+    max-width: 300px; /* Максимальная ширина изображения */
+    height: auto;
+    object-fit: contain; /* Пропорциональное масштабирование */
+    margin-bottom: 10px; /* Межстрочный интервал перед текстом */
+}
+
+/* Описание товара и ссылка */
+.item p {
+    font-size: 20px; /* Размер шрифта */
+    line-height: 1.5; /* Высота строки */
+    text-align: center; /* Центральное выравнивание текста */
+    margin: 0; /* Убираем стандартные отступы параграфа */
+}
+
+.item p a {
+    color: blue;
+    text-decoration: none;
+}
+
+.item p a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -113,16 +155,53 @@ a {
 }
 
 
-.logo {
-    width: 400px;
-    margin-top: 20px;
-}
-
-
 
 @media (max-width: 600px) {
 
+    /* Основной контейнер */
+.container {
+    display: flex;
+    flex-direction: column; /* Расположение элементов сверху вниз */
+    align-items: center; /* Горизонтальное центрирование элементов */
+    gap: 10px; /* Интервал между элементами */
+}
 
+/* Блок одного товара */
+.item {
+    display: flex;
+    flex-direction: column; /* Элементы внутри блока расположены вертикально */
+    align-items: center; /* Центрирование элементов */
+    background-color: rgb(24, 26, 27); /* Цвет фона */
+    padding: 10px; /* Отступы вокруг содержимого */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 5px; /* Скругленные углы */
+    width: 100%; /* Ширина элемента занимает всю доступную ширину контейнера */
+}
+
+/* Фотография товара */
+.tovar {
+    max-width: 80%; /* Изображение растягивается на всю ширину родительского блока */
+    height: auto;
+    object-fit: cover; /* Масштабирует изображение, сохраняя пропорции */
+    margin-bottom: 10px; /* Промежуток перед описанием */
+}
+
+/* Описание товара и ссылка */
+.item p {
+    font-size: 16px; /* Размер шрифта уменьшен для лучшего восприятия на маленьком экране */
+    line-height: 1.5; /* Интерлиньяж */
+    text-align: center; /* Центровка текста */
+    margin: 0; /* Обнуляем внутренние отступы */
+}
+
+.item p a {
+    color: blue;
+    text-decoration: none;
+}
+
+.item p a:hover {
+    text-decoration: underline;
+}
 
 img {
     width: 300px;
@@ -143,7 +222,7 @@ p {
 
 .Hi  {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin-left: 00px;
     margin-right: 00px;
