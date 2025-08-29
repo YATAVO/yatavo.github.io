@@ -1,0 +1,168 @@
+
+html, body {
+  height: 100%; 
+  margin: 0;
+  overflow-y: auto; 
+}
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  overflow-x: hidden;  
+}
+  
+  
+  h1 {
+    font-size: 64px;
+    color: white;
+    margin: 0; 
+    text-align: center; 
+  }
+  
+
+  p {
+    font-size: 24px;
+    color: white;
+    text-align: center; 
+    margin: 0; 
+  }
+
+a:hover {
+  color: black;
+}
+
+.box a {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  
+}
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.container {
+  display: flex; 
+  gap: 16px; 
+}
+
+.box {
+  --list: #74e2dd, #4a6899;
+  --grad: linear-gradient(45deg, var(--list));
+  position: relative;
+  border: solid 4px transparent;
+  aspect-ratio: 7 / 10;
+  border-radius: 1em;
+  background: conic-gradient(rgba(0, 0, 0, 0.75) 0 0) padding-box,
+              var(--grad) border-box;
+
+  &:nth-child(2) { --list: #5cfa5c, #3ca862 }
+  &:nth-child(3) { --list: #f363ec, #5a13d0 }
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--grad);
+    filter: blur(0.75em);
+    content: '';
+  }
+}
+
+.box h1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none; 
+  text-align: center;
+  margin: 0; 
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.box {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.container > * {
+  margin-right: 10px; 
+}
+
+.container > *:last-child {
+  margin-right: 0; 
+}
+.container p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+
+.container button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.box:hover {
+  transform: scale(1.1);
+  background-color: black;
+  
+ }
+ 
+ .box:hover::before {
+   filter: blur(0);
+   opacity: 0; 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
