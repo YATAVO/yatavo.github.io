@@ -156,13 +156,17 @@ a {
 }
 
 
-
+.lang {
+    width: 150px;
+}
 
 
 
 
 
 @media (max-width: 600px) {
+
+
 
 
 .container {
